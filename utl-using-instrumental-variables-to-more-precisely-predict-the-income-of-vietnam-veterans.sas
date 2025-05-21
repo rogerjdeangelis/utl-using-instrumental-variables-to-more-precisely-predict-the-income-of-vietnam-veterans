@@ -14,29 +14,56 @@ please provide a simple real world example using vietnam draft lottery numbers a
 
 SOAPBOX ON
 
-Vietnam draft lottery numbers are a good instrumetal variable.
-Because the lottery number is not influenced by factors such as socioeconomic
-background, income or motivation, it does not capture any of the unobserved variation in
-the earning variable that could be associated with the error term.
-This randomness makes it a good instrumental variable for military service, as it affects the
-likelihood of serving but (ideally) isn't correlated with other factors affecting earnings.
-Note you do not need to draw a new sample of veterans you can use the draft numbers you have.
+ COMMENTS
 
-The known validated model for veteran earnings is:
+ 1 Roger
+ 2 Mark
 
-earnings <- 25000 - 5000*military + 8000*ability + rnorm(n, 0, 5000)
+ 1. Roger Deangelis
+    rogerjdeangelis@gmail.
 
-However we do not have the ability variable.
-This earnings model above defines the effect of miitary service is -$5,000 earnings per year,
+   Vietnam draft lottery numbers are a good instrumetal variable.
+   Because the lottery number is not influenced by factors such as socioeconomic
+   background, income or motivation, it does not capture any of the unobserved variation in
+   the earning variable that could be associated with the error term.
+   This randomness makes it a good instrumental variable for military service, as it affects the
+   likelihood of serving but (ideally) isn't correlated with other factors affecting earnings.
+   Note you do not need to draw a new sample of veterans you can use the draft numbers you have.
 
-Input variables
+   The known validated model for veteran earnings is:
 
-draft_number is the instrument (1-365, lower numbers more likely to be drafted)
-military     is the endogenous served variable (1 if served, 0 otherwise)
-earnings     is the outcome variable yearly income
+   earnings <- 25000 - 5000*military + 8000*ability + rnorm(n, 0, 5000)
+
+   However we do not have the ability variable.
+   This earnings model above defines the effect of miitary service is -$5,000 earnings per year,
+
+   Input variables
+
+   draft_number is the instrument (1-365, lower numbers more likely to be drafted)
+   military     is the endogenous served variable (1 if served, 0 otherwise)
+   earnings     is the outcome variable yearly income
+
+
+ 2. Mark Keintz,
+    mkeintz@outlook.com
+
+ I see the attractiveness in saying that the randomness of a lottery number “makes it a
+  good instrumental variable for military service, as it affects the likelihood of serving but
+  (ideally) isn't correlated with other factors affecting earnings.”.
+
+ I agree lottery numbers
+  were intrinsically random with respect to factors affecting earnings.  And that low lottery numbers
+  increased likelihood of serving in the military uniformly across the population.  But among high
+  lottery numbers, where being drafted was unlikely, I would expect to see a growing influence of
+  income on the probability of a given “lottery-cohort” member joining the military.  And (I believe)
+  there is a correlation between income as a youth and income later on.  So I don’t feel entirely
+  convinced that lottery number is entirely uncorrelated “with other factors affecting earnings” in
+  the outcome measure being studied.
+
+  But I do like the idea.  And I would appreciate insights
+  from those who regularly use instrumental variables.
 
 SOAPBOX OFF
-
 
 /**************************************************************************************************************************/
 /*             INPUT              |             PROCESS                               |   OUTPUT                          */
